@@ -88,30 +88,30 @@ Edit after here!
       margin: 0 auto;
   */
 
-  width: 960px;
+  max-width: 960px;
 }
 header{
-  width: 960px;
+  width: 100%;
 }
 
 nav {
-  width: 960px;
+  width: 100%;
 }
 
 
 aside{
   float:left;
-  width: 300px;
+  width: 31.25%;
 }
 
 aside img{
-  width: 270px;
+  width: 100%;
 }
 
 
 article{
   float: right;
-  width: 660px;
+  width: 68.75%;
 }
 
 article img{
@@ -120,3 +120,38 @@ article img{
 }
 
 
+@media(max-width:960px){
+  .container{
+    width:100%;
+  }
+}
+
+@media(max-width:679px){
+  h1{
+    font-size:41px;
+  }
+
+  article, aside{///x/
+    clear:left;
+    display:block;
+    width:100%
+  }
+
+  #portfolio img{
+    width:50%;
+  }
+}
+
+
+
+@media(min-width:679px){
+  #portfolio img{
+    width:33%;
+  }
+}
+
+@media(min-width:932px){
+  #portfolio img{
+    width:25%;
+  }
+}
